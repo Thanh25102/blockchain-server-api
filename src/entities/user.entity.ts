@@ -46,11 +46,11 @@ export class User {
   @JoinTable({
     name: 'org_user',
     joinColumn: {
-      name: 'user_id',
+      name: 'org_id',
       referencedColumnName: 'id',
     },
     inverseJoinColumn: {
-      name: 'org_id',
+      name: 'user_id',
       referencedColumnName: 'id',
     },
   })
@@ -63,11 +63,11 @@ export class User {
   @JoinTable({
     name: 'user_role',
     joinColumn: {
-      name: 'user_id',
+      name: 'role_id',
       referencedColumnName: 'id',
     },
     inverseJoinColumn: {
-      name: 'role_id',
+      name: 'user_id',
       referencedColumnName: 'id',
     },
   })

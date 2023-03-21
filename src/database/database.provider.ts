@@ -11,8 +11,8 @@ export const databaseProvider = [
         username: 'thanh',
         password: '123456',
         database: 'serverapi',
-        entities: [__dirname + '/../**/entities/*.entity{.ts,.js}'],
-        synchronize: true,
+        entities: [__dirname + '/../entities/*.entity{.ts,.js}'],
+        synchronize: false,
       });
       return dataSource.initialize();
     },
