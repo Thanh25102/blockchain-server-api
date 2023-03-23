@@ -6,7 +6,6 @@ import { DatabaseModule } from './database/database.module';
 import { databaseProvider } from './database/database.provider';
 import { OrganizationModule } from './organization/organization.module';
 import { RoleModule } from './role/role.module';
-import { OrganizationModule } from './organization/organization.module';
 
 @Module({
   imports: [UserModule, DatabaseModule, OrganizationModule, RoleModule],

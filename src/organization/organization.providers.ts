@@ -1,5 +1,6 @@
 import { DataSource } from 'typeorm';
 import { Organization } from '../entities/organization.entity';
+import { OrganizationService } from './organization.service';
 
 export const organizationProviders = [
   {
